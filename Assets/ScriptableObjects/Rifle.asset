@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a8b04d9945318f46918766764b21196, type: 3}
+  m_Name: Rifle
+  m_EditorClassIdentifier: 
+  weaponName: Lee-Enfield rifle
+  interShotTime: 2
+  magazineCapacity: 10
+  reloadTime: 5
+  automaticFire: 0
+  bulletPrefab: {fileID: 2716582216224127656, guid: fa7294e80a53dcd46be75068107e1e06, type: 3}
+  shotClips:
+  - {fileID: 8300000, guid: e25ec02f202117b4d81fc091d38b51a8, type: 3}
+  - {fileID: 8300000, guid: e42e615757dc4cc42a59c46ee34f442b, type: 3}
+  reloadClip: {fileID: 8300000, guid: c86587e7342ecb64589abb89d9244267, type: 3}
+  sprite: {fileID: 21300000, guid: 4117ac8dfb5267d44831883a48baaeba, type: 3}

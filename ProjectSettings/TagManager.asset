@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Obstacle
+  - Boid
+  - Emu
+  - Soldier
+  - Soldier/PlayerControlled
+  - BloodParent
+  - FootprintParent
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Terrain
+  - Map
+  - Projectile
+  - Fence
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: BackgroundTerrain
+    uniqueID: 514651057
+    locked: 0
+  - name: SplineTerrain
+    uniqueID: 1783210123
+    locked: 0
+  - name: Roads
+    uniqueID: 290878675
+    locked: 0
+  - name: Footprints
+    uniqueID: 1919190971
+    locked: 0
+  - name: Railroads
+    uniqueID: 1580878603
+    locked: 0
+  - name: Obstacles
+    uniqueID: 1602013193
+    locked: 0
+  - name: DebugLow
+    uniqueID: 1310639243
+    locked: 0
+  - name: Boids
+    uniqueID: 3798348031
+    locked: 0
+  - name: DebugTop
+    uniqueID: 3377299963
+    locked: 0
