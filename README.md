@@ -90,4 +90,4 @@ Three Cinemachine Virtual Cameras (with Pixel Perfect enabled) are present on th
 - Map camera — free moving camera showing only the terrain map, enabled when player equips the map.
 
 ## Note on third party assets
-As sound and font assets used in this project were not made by myself and I'm not allowed to redistribute them in a downloadable form, they are not included in this repository (thus, audio sources were disabled and fonts were replaced default unity font).
+As sound and font assets used in this project were not made by myself and I'm not allowed to redistribute them in a downloadable form, they are not included in this repository (thus, audio sources were disabled and fonts were replaced with default unity font).
