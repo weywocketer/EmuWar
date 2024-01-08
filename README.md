@@ -1,11 +1,11 @@
 # FUBAR Ops: Emu War
 
 ## Project overview
-FUBAR Ops: Emu War is a top-down tactical shooter (with some planned RTS-like mechanics) set during the Emu War, created in Unity. The project is under devolopment, with this repository and readme file presenting its current state and main elements.
+FUBAR Ops: Emu War is a top-down tactical shooter (with some planned RTS-like mechanics) set during the Emu War, created in Unity. The project is under development, with this repository and readme file presenting its current state and main elements.
 
 ## Project structure
 ### Namespaces
-Diagram presenting dependencies between namespaces (for clarity Core and Constants namespaces were ommited):
+Diagram presenting dependencies between namespaces (for clarity Core and Constants namespaces were omitted):
 <img src="https://github.com/weywocketer/Aurora/assets/50771049/af2ef5a8-7579-401f-8c02-77cefb2e9129" width=100%>
 
 ### Components on units (Player, Soldier and Emu GameObjects)
@@ -14,7 +14,7 @@ Diagram presenting dependencies between namespaces (for clarity Core and Constan
 - AiSteering — Responsible for calculating velocity based on active steering behaviours.
 - ManualSteering — Responsible for  calculating velocity and handling other actions based on player's input.
 - Health — Keeps track of unit's health, invokes related events.
-- DistanceAttack — Allows to perform distance attacks, holds list of possesed weapons.
+- DistanceAttack — Allows to perform distance attacks, holds list of possessed weapons.
 - MeleeAttack — Allows to perform melee attacks.
 - DelayedConditionTimer — Used by some States to perform distance checks in fixed intervals.
 - UnderFireNotifier — Used to change state of all nearby Emus to EmuDecideState, when the gameObject has performed a distance attack.
@@ -24,7 +24,7 @@ Diagram presenting dependencies between namespaces (for clarity Core and Constan
 - AnimationSpeedChanger — Controls speed of movement animation, based on rb velocity.
 
 
-Components used on unit comparision:
+Components used on unit comparison:
 |Component               |Player|Soldier|Emu|
 |-----------------------:|:----:|:-----:|:-:|
 |Boid                    |☑️|☑️||
@@ -58,7 +58,7 @@ Class diagram presenting DistanceAttack MonoBehaviour's dependencies:
 <img src="https://github.com/weywocketer/Aurora/assets/50771049/06287053-9a4e-4207-98dc-139c213f205e">
 
 ### Steering behaviours
-AiSteering class contains methods for calculating steering forces for different behaviours (the following behavioiurs described by Craig Reynolds are implemented: seek, flee, arrive, obstacle avoidance, wander, flocking, hide). Different weights can be assigned to these behaviours to achieve desired combined behaviours. Defined weight combinations are stored in Constants.BehaviourWeights static class.
+AiSteering class contains methods for calculating steering forces for different behaviours (the following behaviours described by Craig Reynolds are implemented: seek, flee, arrive, obstacle avoidance, wander, flocking, hide). Different weights can be assigned to these behaviours to achieve desired combined behaviours. Defined weight combinations are stored in Constants.BehaviourWeights static class.
 
 ### State machines
 Finite state machines are used in the project to control units' (soldiers and emus) behaviours. Diagrams below present possible unit states and transitions between them.
@@ -75,13 +75,13 @@ Class diagram for the FSM (Finite State Machine) namespace:
 <img src="https://github.com/weywocketer/Aurora/assets/50771049/0a650fa2-88d5-452b-9f8a-b2c809861007">
 
 ### Spatial partitioning
-To minimize the number of performed operations (especially distance [or squared distance] calculations), spatial partitioning with fixed cell size is used. Minimal possible cell size depends on the maximal range of performed distance checks (at this moment — maximal distance attack range). For each Boid GridPositionTracker class is used to update its position in the grid. Separate grids are created for Soldiers and Emus.
+To minimize the number of performed operations (especially distance [or squared distance] calculations), spatial partitioning with fixed cell size is used. The minimal possible cell size depends on the maximal range of performed distance checks (at this moment — maximal distance attack range). For each Boid GridPositionTracker class is used to update its position in the grid. Separate grids are created for Soldiers and Emus.
 
 ### Input system
 Unity Input System package is used in the project, with Action Maps for player and camera movement.
 
 ### Map creation and drawing tools
-Map namespace contains scripts for creation and handling of the map of the terrain that is avaliable to the player. Map is created by rendering a texture with map symbols placed in positions of important terrain features (roads, railways, etc.). Linde renderers are used to give player the abiltity to draw/erase lines in different colors on the map.
+Map namespace contains scripts for creation and handling of the map of the terrain that is available to the player. The map is created by rendering a texture with map symbols placed in positions of important terrain features (roads, railways, etc.). Line renderers are used to give the player the ability to draw/erase lines in different colours on the map.
 
 ### Camera system (with Cinemachine)
 Three Cinemachine Virtual Cameras (with Pixel Perfect enabled) are present on the scene:
@@ -90,4 +90,4 @@ Three Cinemachine Virtual Cameras (with Pixel Perfect enabled) are present on th
 - Map camera — free moving camera showing only the terrain map, enabled when player equips the map.
 
 ## Note on third party assets
-As sound and font assets used in this project were not made by myself and I'm not allowed to redistribute them in a downloadable form, they are not included in this repository (thus, audio sources were disabled and fonts were replaced with default unity font).
+As sound and font assets used in this project were not made by myself, and I'm not allowed to redistribute them in a downloadable form, they are not included in this repository (thus, audio sources were disabled and fonts were replaced with default unity font).
