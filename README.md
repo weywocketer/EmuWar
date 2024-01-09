@@ -51,11 +51,11 @@ Components used on unit comparison:
 
 Class diagram presenting Boid MonoBehaviour's dependencies:
 <br>
-<img src="https://github.com/weywocketer/Aurora/assets/50771049/631c5f9d-5c99-49b9-b086-529c74ef49b6">
+<img src="https://github.com/weywocketer/EmuWar/blob/master/ReadmeImages/boid.png">
 
 Class diagram presenting DistanceAttack MonoBehaviour's dependencies:
 <br>
-<img src="https://github.com/weywocketer/Aurora/assets/50771049/06287053-9a4e-4207-98dc-139c213f205e">
+<img src="https://github.com/weywocketer/EmuWar/blob/master/ReadmeImages/distanceAttack.png">
 
 ### Steering behaviours
 AiSteering class contains methods for calculating steering forces for different behaviours (the following behaviours described by Craig Reynolds are implemented: seek, flee, arrive, obstacle avoidance, wander, flocking, hide). Different weights can be assigned to these behaviours to achieve desired combined behaviours. Defined weight combinations are stored in Constants.BehaviourWeights static class.
@@ -64,15 +64,15 @@ AiSteering class contains methods for calculating steering forces for different 
 Finite state machines are used in the project to control units' (soldiers and emus) behaviours. Diagrams below present possible unit states and transitions between them.
 Emu State Machine:
 <br>
-<img src="https://github.com/weywocketer/Aurora/assets/50771049/b2dad4a7-335e-4cb2-a13c-7aa41e4c5d63">
+<img src="https://github.com/weywocketer/EmuWar/blob/master/ReadmeImages/emuFSM.png">
 
 Soldier State Machine:
 <br>
-<img src="https://github.com/weywocketer/Aurora/assets/50771049/34c76386-a249-43dd-a57b-9861fe7549a3">
+<img src="https://github.com/weywocketer/EmuWar/blob/master/ReadmeImages/soldierFSM.png">
 
 Class diagram for the FSM (Finite State Machine) namespace:
 <br>
-<img src="https://github.com/weywocketer/Aurora/assets/50771049/0a650fa2-88d5-452b-9f8a-b2c809861007">
+<img src="https://github.com/weywocketer/EmuWar/blob/master/ReadmeImages/stateMachine.png">
 
 ### Spatial partitioning
 To minimize the number of performed operations (especially distance [or squared distance] calculations), spatial partitioning with fixed cell size is used. The minimal possible cell size depends on the maximal range of performed distance checks (at this moment — maximal distance attack range). For each Boid GridPositionTracker class is used to update its position in the grid. Separate grids are created for Soldiers and Emus.
