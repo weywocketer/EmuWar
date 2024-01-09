@@ -62,6 +62,8 @@ AiSteering class contains methods for calculating steering forces for different 
 
 ### State machines
 Finite state machines are used in the project to control units' (soldiers and emus) behaviours. Diagrams below present possible unit states and transitions between them.
+<br>
+<br>
 Emu State Machine:
 <br>
 <img src="https://github.com/weywocketer/EmuWar/blob/master/ReadmeImages/emuFSM.png">
