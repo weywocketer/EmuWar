@@ -6,7 +6,7 @@ FUBAR Ops: Emu War is a top-down tactical shooter (with some planned RTS-like me
 ## Project structure
 ### Namespaces
 Diagram presenting dependencies between namespaces (for clarity Core and Constants namespaces were omitted):
-<img src="https://github.com/weywocketer/Aurora/assets/50771049/af2ef5a8-7579-401f-8c02-77cefb2e9129" width=100%>
+<img src="https://github.com/weywocketer/EmuWar/blob/master/ReadmeImages/namespaces.png" width=100%>
 
 ### Components on units (Player, Soldier and Emu GameObjects)
 - Boid — Handles the high level unit's movement and gameObject's destruction.
